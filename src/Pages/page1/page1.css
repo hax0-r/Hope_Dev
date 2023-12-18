@@ -2,7 +2,7 @@
   --white: #fff;
 }
 
-section {
+.home section {
   background: linear-gradient(rgba(0, 0, 0, 0.251), rgba(0, 0, 0, 0.347)), url(./asset1/bg.png) center;
   height: 100vh;
   background-size: cover;
@@ -10,7 +10,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-section h1 {
+.home section h1 {
   color: var(--white);
   padding-bottom: 8rem;
   font-size: 30vmin;
@@ -19,8 +19,7 @@ section h1 {
   line-height: 94.5%;
   letter-spacing: -0.435rem;
 }
-
-.page2 {
+.home .page2 {
   background-color: #1b0625;
   min-height: 100vh;
   display: flex;
@@ -29,7 +28,7 @@ section h1 {
   align-items: center;
   padding: 14vmin 0;
 }
-.page2 h1 {
+.home .page2 h1 {
   color: #FFF;
   font-family: DM Sans;
   font-size: 7vmin;
@@ -39,7 +38,7 @@ section h1 {
   text-align: center;
   padding-bottom: 3rem;
 }
-.page2 .processPage {
+.home .page2 .processPage {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -47,7 +46,7 @@ section h1 {
   gap: 1.4rem;
   margin: 0 1rem;
 }
-.page2 button {
+.home .page2 button {
   max-width: 9.5625rem;
   width: 100%;
   height: 2.625rem;
@@ -62,14 +61,13 @@ section h1 {
   border: none;
   margin: 3rem 0;
 }
-
-.page3 {
+.home .page3 {
   background: url(./asset1/pageThreeBg.png) center;
   background-size: cover;
   min-height: 100vh;
   padding: 5rem 0;
 }
-.page3 .main {
+.home .page3 .main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +76,7 @@ section h1 {
   text-align: center;
   margin: 0 2.5rem;
 }
-.page3 .main h1 {
+.home .page3 .main h1 {
   color: #FFF;
   text-align: center;
   font-family: DM Sans;
@@ -90,7 +88,7 @@ section h1 {
   text-transform: capitalize;
   max-width: 34.375rem;
 }
-.page3 .main p {
+.home .page3 .main p {
   color: #B9B9B9;
   font-family: DM Sans;
   font-size: 3.02vmin;
@@ -102,8 +100,7 @@ section h1 {
   max-width: 45rem;
   width: 100%;
 }
-
-.page4 {
+.home .page4 {
   background-color: #1b0625;
   padding: 14vmin 0;
   display: flex;
@@ -111,7 +108,7 @@ section h1 {
   justify-content: center;
   align-items: center;
 }
-.page4 .head {
+.home .page4 .head {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,7 +116,7 @@ section h1 {
   text-align: center;
   gap: 4vmin;
 }
-.page4 .head h1 {
+.home .page4 .head h1 {
   color: #FFF;
   font-family: DM Sans;
   font-size: 3.4375rem;
@@ -129,7 +126,7 @@ section h1 {
   letter-spacing: -0.1375rem;
   text-transform: capitalize;
 }
-.page4 .head p {
+.home .page4 .head p {
   max-width: 29.5rem;
   width: 100%;
   color: #B9B9B9;
@@ -142,7 +139,7 @@ section h1 {
   letter-spacing: -0.0225rem;
   text-transform: capitalize;
 }
-.page4 .content {
+.home .page4 .content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,8 +148,7 @@ section h1 {
   margin: 0 2vmin;
   max-width: 79.375rem;
 }
-
-.page5 {
+.home .page5 {
   padding: 14vmin 0;
   background: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.304)), url(./asset1/page5Bg.png) center;
   background-size: cover;
@@ -162,13 +158,13 @@ section h1 {
   align-items: center;
   width: 100%;
 }
-.page5 .main {
+.home .page5 .main {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 0 2rem;
 }
-.page5 .main .left h1 {
+.home .page5 .main .left h1 {
   color: #FFF;
   font-family: DM Sans;
   font-size: 3.4375rem;
@@ -178,7 +174,7 @@ section h1 {
   letter-spacing: -0.1375rem;
   text-transform: capitalize;
 }
-.page5 .main .left p {
+.home .page5 .main .left p {
   color: #B9B9B9;
   font-family: DM Sans;
   font-size: 1.125rem;
@@ -191,7 +187,7 @@ section h1 {
   width: 100%;
   margin: 6vmin 0;
 }
-.page5 .main .left button {
+.home .page5 .main .left button {
   border-radius: 3.125rem;
   background: #31BAD0;
   width: 11.2495rem;
@@ -205,22 +201,21 @@ section h1 {
   line-height: 94.5%;
   letter-spacing: -0.045rem;
 }
-.page5 .main .right img {
+.home .page5 .main .right img {
   max-height: 42.31231rem;
   border-radius: 1.125rem;
   border: none;
   margin-left: 4vmin;
   border: 2px solid rgba(255, 255, 255, 0.2039215686);
 }
-
 @media screen and (max-width: 830px) {
-  .page5 {
+  .home .page5 {
     height: unset;
   }
-  .page5 .main {
+  .home .page5 .main {
     flex-direction: column;
   }
-  .page5 .main .left {
+  .home .page5 .main .left {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,42 +223,41 @@ section h1 {
     padding: 5vmin 0;
     text-align: center;
   }
-  .page5 .main .right {
+  .home .page5 .main .right {
     padding: 5vmin 0;
   }
 }
 @media screen and (max-width: 550px) {
-  .page5 {
+  .home .page5 {
     height: unset;
   }
-  .page5 .main .right img {
+  .home .page5 .main .right img {
     height: 20rem;
   }
 }
-.page6 {
+.home .page6 {
   background: linear-gradient(rgba(0, 0, 0, 0.139), rgba(0, 0, 0, 0.158)), url(./asset1/world-map.png) center;
   height: 100vh;
   background-size: cover;
 }
-
-.page7 {
+.home .page7 {
   background: #1b0625;
   padding: 8vmin 8vmin;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.page7 .main {
+.home .page7 .main {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.page7 .main .left {
+.home .page7 .main .left {
   display: flex;
   flex-direction: column;
   gap: 3vmin;
 }
-.page7 .main .left h4 {
+.home .page7 .main .left h4 {
   color: #31BAD0;
   font-family: DM Sans;
   font-size: 1.125rem;
@@ -273,7 +267,7 @@ section h1 {
   letter-spacing: 0.25875rem;
   text-transform: capitalize;
 }
-.page7 .main .left h1 {
+.home .page7 .main .left h1 {
   color: #FFF;
   font-family: DM Sans;
   font-size: 8.3vmin;
@@ -284,7 +278,7 @@ section h1 {
   text-transform: capitalize;
   max-width: 33.375rem;
 }
-.page7 .main .left p {
+.home .page7 .main .left p {
   color: #B9B9B9;
   font-family: DM Sans;
   font-size: 1.125rem;
@@ -295,7 +289,7 @@ section h1 {
   text-transform: capitalize;
   max-width: 42.25rem;
 }
-.page7 .main .left button {
+.home .page7 .main .left button {
   width: 9.0625rem;
   height: 2.625rem;
   flex-shrink: 0;
@@ -310,27 +304,26 @@ section h1 {
   line-height: 94.5%;
   letter-spacing: -0.045rem;
 }
-.page7 .main .right .page7Card {
+.home .page7 .main .right .page7Card {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 35rem;
 }
-
 @media screen and (max-width: 1050px) {
-  .page7 .main {
+  .home .page7 .main {
     flex-direction: column;
   }
 }
 @media screen and (max-width: 600px) {
-  .page7 .main {
+  .home .page7 .main {
     flex-direction: column;
   }
-  .page7 .main .right {
+  .home .page7 .main .right {
     padding: 10vmin 0;
   }
-  .page7 .main .right .page7Card {
+  .home .page7 .main .right .page7Card {
     width: unset;
     gap: 5vmin;
   }

@@ -5,15 +5,14 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 
 export default function Navbar() {
-    const [ showNavLinks,setShowNavLinks] = useState(false)
     const nav_Hide = useRef();
-    const closeNav = ()=>{
+    const closeNav = () => {
         nav_Hide.current.classList.remove("mobile-nav-links")
     }
-    const showNav = ()=>{
+    const showNav = () => {
         nav_Hide.current.classList.add("mobile-nav-links")
     }
-    
+
     return (
         <>
             <nav>
@@ -22,13 +21,13 @@ export default function Navbar() {
                     <div ref={nav_Hide} className='links'>
                         <ul>
                             <div className="nav-close" onClick={closeNav}>
-                        <IoClose />
+                                <IoClose />
                             </div>
                             {
                                 NAVBAR_DATA.map((navbar, index) => {
                                     return (
                                         <li key={index}>
-                                            <Link to={navbar.navPath}>{navbar.navTitle}</Link>
+                                            <Link onClick={closeNav} to={navbar.navPath}>{navbar.navTitle}</Link>
                                         </li>
                                     )
                                 })
@@ -38,8 +37,8 @@ export default function Navbar() {
                     <button className="button">
                         <span>Get Started </span>
                     </button>
-                    <div className="nav-bar"  onClick={showNav}>
-                    <FaBarsStaggered />
+                    <div className="nav-bar" onClick={showNav}>
+                        <FaBarsStaggered />
                     </div>
                 </div>
             </nav>
