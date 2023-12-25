@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import ProcessCard from '../../Components/ProcessCard/ProcessCard'
 import PROCESS_CARD_DATA from '../../Components/ProcessCard/PROCESS_CARD_DATA'
 import PageFourCard from '../../Components/PageFourCard/PageFourCards'
@@ -6,16 +6,48 @@ import PAGE_FOUR_DATA from '../../Components/PageFourCard/PAGE_FOUR_DATA.JS'
 import page5Right from '../page1/asset1/page5Right.png'
 import PageSevenCard from '../../Components/PageSevenCard/PageSevenCard'
 import PAGE_SEVEN_DATA from '../../Components/PageSevenCard/PAGE_SEVEN_DATA'
+import homeImg from '../../Assets/home.jpg'
+import Navbar from '../../Components/Navbar/Navbar'
+import { TiStarFullOutline } from "react-icons/ti";
+import gsap from "gsap";
+
+
+
 export default function page1() {
+    const star = useRef();
+
+    useEffect(() => {
+        gsap.to(star.current, {
+            rotate: "360",
+            repeat: -1,
+            ease:"none",
+            duration:5
+        })
+    }, [])
+
     return (
         <>
             <div className="home">
                 <div className="page1">
+                    <Navbar />
                     <section>
-                        <h1>Sell Faster.</h1>
+                        <div className="left">
+                            <div className="page1-star">
+                                <div className="star-home" ref={star}><TiStarFullOutline /></div>
+                                <h5>DIGITAL MARKETING AGENCY</h5>
+                            </div>
+                            <h1>Best Digital Marketing Agency</h1>
+                            <p>Boost your digital success with The Ali Marketing, the SEO-savvy experts delivering tailored strategies to skyrocket your online visibility and drive remarkable business growth.</p>
+                            <button className="button">
+                                <span>Get Started </span>
+                            </button>
+                        </div>
+                        <div className="right">
+                            <img src={homeImg} alt="" />
+                        </div>
                     </section>
                 </div>
-                <div className="page2">
+                {/* <div className="page2">
                     <h1>Our Process</h1>
                     <div className="processPage">
                         {
@@ -45,7 +77,7 @@ export default function page1() {
 
                         </p>
                     </div>
-                </div>
+                </div> */}
                 <div className="page4">
                     <div className="head">
                         <h1>What we’ll do for you</h1>
@@ -65,7 +97,7 @@ export default function page1() {
                         }
                     </div>
                 </div>
-                <div className="page5">
+                {/* <div className="page5">
                     <div className="main">
                         <div className="left">
                             <h1>Content Creation</h1>
@@ -76,15 +108,13 @@ export default function page1() {
                             <img src={page5Right} alt="" />
                         </div>
                     </div>
-                </div>
-                <div className="page6">
-                </div>
+                </div> */}
                 <div className="page7">
                     <div className="main">
                         <div className="left">
                             <h4>WHY CHOOSE US</h4>
-                            <h1>Connecting people is our business.</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                            <h1>One-stop digital marketing services</h1>
+                            <p>Supercharge your online presence with our Digital Marketing Agency. We excel in SEO, Social Media Marketing, and content creation. Dominate search rankings, engage customers, and drive targeted traffic. Partner with us for unparalleled digital success..</p>
                             <button>Get Started</button>
                         </div>
                         <div className="right">
@@ -104,6 +134,9 @@ export default function page1() {
                         </div>
                     </div>
                 </div>
+                <div className="page6">
+                </div>
+
             </div>
         </>
     )

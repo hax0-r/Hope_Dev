@@ -6,13 +6,17 @@
 
 nav {
     padding: 2.5vh 3.5vw;
-    background-color: #000;
 
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
+
+        img {
+            height: 6vmin;
+        }
+
         h1 {
             color: var(--white);
         }
@@ -23,9 +27,14 @@ nav {
                 justify-content: center;
                 align-items: center;
 
+                .nav-close {
+                    display: none;
+                }
+
                 li {
+                    list-style: none;
+
                     a {
-                        list-style: none;
                         margin: 0 1.5rem;
                         padding: .8rem;
                         color: var(--white);
@@ -37,8 +46,12 @@ nav {
                         letter-spacing: -0.045rem;
                     }
                 }
+
+
+
             }
         }
+
         .mobile-nav-links {
             display: none;
             position: absolute;
@@ -48,23 +61,27 @@ nav {
             width: 100%;
             top: 0;
             right: 0;
+
             ul {
                 flex-direction: column;
                 margin-top: 3rem;
                 position: relative;
-                .nav-close{
+
+                .nav-close {
                     font-size: 1.6rem;
                     position: absolute;
                     top: -1rem;
                     left: 2.5rem;
                 }
+
                 li {
                     margin: 2rem 1.5rem;
                     list-style: none;
+
                     a {
                         text-decoration: none;
                         list-style: none;
-                        margin:  1rem;
+                        margin: 1rem;
                         padding: .8rem;
                         color: #000;
                         text-decoration: none;
@@ -78,42 +95,66 @@ nav {
             }
         }
 
-        button {
-            position: relative;
-            overflow: hidden;
-            width: 9.5625rem;
-            height: 2.625rem;
-            border-radius: 1.5rem;
-            background: #31bad0;
-            background-size: 400%;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            color: #000;
-            font-weight: bolder;
-            font-family: dm;
+        .btn-nav {
+            display:flex;
+            align-items: center;
+            gap: 3vmin;
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                padding: .5rem;
 
-            &:hover::before {
-                transform: scaleX(1);
+                .number-nav {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    color: #15ddfc;
+                    font-size: 1.3rem;
+
+                    p {
+                        font-size: 1rem;
+                        color: #fff;
+                    }
+                }
             }
 
-            span {
+            button {
                 position: relative;
-                z-index: 1;
-            }
+                overflow: hidden;
+                width: 9.5625rem;
+                height: 2.625rem;
+                border-radius: 1.5rem;
+                background: #31bad0;
+                background-size: 400%;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                color: #000;
+                font-weight: bolder;
+                font-family: dm;
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                transform: scaleX(0);
-                transform-origin: 0 50%;
-                width: 100%;
-                height: inherit;
-                border-radius: inherit;
-                background: #15ddfc;
-                transition: all 0.475s;
+                &:hover::before {
+                    transform: scaleX(1);
+                }
+
+                span {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: scaleX(0);
+                    transform-origin: 0 50%;
+                    width: 100%;
+                    height: inherit;
+                    border-radius: inherit;
+                    background: #15ddfc;
+                    transition: all 0.475s;
+                }
             }
         }
 
@@ -129,15 +170,25 @@ nav {
 
     nav {
         .navbar {
+            img {
+                height: 8vmin;
+            }
+
             .links {
                 display: none;
+
+                ul {
+                    .nav-close {
+                        display: block;
+                    }
+                }
             }
 
             .mobile-nav-links {
                 display: block;
             }
-            
-            button {
+
+            .btn-nav {
                 display: none;
             }
 

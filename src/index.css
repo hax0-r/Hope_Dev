@@ -5,6 +5,8 @@
     box-sizing: border-box;
     outline: none;
     font-family: 'DM Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
     &::selection{
         color: #1b0625;
         background-color: #31bad0;

@@ -1,6 +1,12 @@
 import React from 'react'
 import NAVBAR_DATA from '../Navbar/NAVBAR_DATA'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { SiGooglemybusiness } from "react-icons/si";
+
+
 
 export default function Footer() {
     return (
@@ -22,9 +28,13 @@ export default function Footer() {
                                 new heights.</h5>
                             <p>Simply fill this form and get into contact with us today!</p>
                             <div className="links-icon">
+                                <Link to="https://www.facebook.com/profile.php?id=61554111733727"> <FaFacebook /></Link>
+                                <Link to="https://www.linkedin.com/company/ez-brand-builders"> <FaLinkedin /></Link>
+                                <Link> <IoLogoWhatsapp /></Link>
+                                <Link> <SiGooglemybusiness /></Link>
                             </div>
                         </div>
-                        <div className="mid">
+                        {/* <div className="mid">
                             <h5>Quick Links</h5>
                             <ul>
                                 {
@@ -37,7 +47,7 @@ export default function Footer() {
                                     })
                                 }
                             </ul>
-                        </div>
+                        </div> */}
                         <div className="right">
 
                             <div className="twoDiv">
@@ -54,7 +64,7 @@ export default function Footer() {
                 </div>
                 <div className="hr"></div>
                 <div className="bottom">
-                    <p>Copyright © 2023 Software House, All rights reserved.</p>
+                    <Link to="/" ><p>Copyright © 2023 Software House, All rights reserved.</p></Link>
                 </div>
             </div>
         </>

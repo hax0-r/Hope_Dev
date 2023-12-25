@@ -1,8 +1,11 @@
 import React, { useRef, useState } from 'react'
 import NAVBAR_DATA from './NAVBAR_DATA'
 import { Link } from 'react-router-dom'
+import { FaPhoneVolume } from "react-icons/fa6";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
+import logo from '../../Assets/logo.png'
+
 
 export default function Navbar() {
     const nav_Hide = useRef();
@@ -17,13 +20,13 @@ export default function Navbar() {
         <>
             <nav>
                 <div className="navbar">
-                    <h1>Software House</h1>
+                    <img src={logo} alt="" />
                     <div ref={nav_Hide} className='links'>
                         <ul>
                             <div className="nav-close" onClick={closeNav}>
                                 <IoClose />
                             </div>
-                            {
+                            {/* {
                                 NAVBAR_DATA.map((navbar, index) => {
                                     return (
                                         <li key={index}>
@@ -31,12 +34,20 @@ export default function Navbar() {
                                         </li>
                                     )
                                 })
-                            }
+                            } */}
                         </ul>
                     </div>
-                    <button className="button">
-                        <span>Get Started </span>
-                    </button>
+                    <div className="btn-nav">
+                        <Link to="https://api.whatsapp.com/send/?phone=923201091220&text&type=phone_number&app_absent=0">
+                            <div className="number-nav">
+                                <FaPhoneVolume />
+                                <p>+92 320 1091 220 </p>
+                            </div>
+                        </Link>
+                        <button className="button">
+                            <span>Sign Up </span>
+                        </button>
+                    </div>
                     <div className="nav-bar" onClick={showNav}>
                         <FaBarsStaggered />
                     </div>

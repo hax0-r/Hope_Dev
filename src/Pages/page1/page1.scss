@@ -9,22 +9,137 @@
 }
 
 .home {
-    section {
-        background: linear-gradient(rgba(0, 0, 0, 0.251), rgba(0, 0, 0, 0.347)), url(./asset1/bg.png) center;
-        height: 100vh;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    background-color: #1b0625;
 
-        h1 {
-            color: var(--white);
-            padding-bottom: 8rem;
-            font-size: 30vmin;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 94.5%;
-            letter-spacing: -0.435rem;
+    .page1 {
+        min-height: 100vh;
+
+        section {
+            padding: 0 8vmin;
+            background-size: cover;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                gap: 3vmin;
+
+                .page1-star {
+                    display: flex;
+                    border: 1px solid #fff;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 1rem;
+                    width: 100%;
+                    padding: .4rem;
+                    gap: 1vmin;
+                    max-width: 16rem;
+                    width: 100%;
+
+                    .star-home {
+                        color: #FFF;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    h5 {
+                        font-size: 14px;
+                        color: #FFF;
+                    }
+                }
+
+                h1 {
+                    color: #FFF;
+                    color: #FFF;
+                    font-size: 70px;
+                    max-width: 70vmin;
+                    line-height: 80px;
+                }
+
+                p {
+                    color: #FFF;
+                    font-family: Kanit;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 120.5%;
+                    text-transform: capitalize;
+                    max-width: 41vmin;
+                    width: 100%;
+                }
+
+                button {
+                    position: relative;
+                    overflow: hidden;
+                    width: 12rem;
+                    height: 3rem;
+                    border-radius: 1.5rem;
+                    background: #31bad0;
+                    background-size: 400%;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    color: #000;
+                    font-weight: bolder;
+                    font-size: 1.1rem;
+
+                    &:hover::before {
+                        transform: scaleX(1);
+                    }
+
+                    span {
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transform: scaleX(0);
+                        transform-origin: 0 50%;
+                        width: 100%;
+                        height: inherit;
+                        border-radius: inherit;
+                        background: #15ddfc;
+                        transition: all 0.475s;
+                    }
+                }
+            }
+
+            .right {
+                margin: 7vmin 0;
+
+                img {
+                    max-width: 720px;
+                    width: 100%;
+                }
+            }
+        }
+
+        @include media(768px) {
+            section {
+                flex-direction: column-reverse;
+
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3vmin;
+
+                    h1 {
+                        max-width: unset;
+                        line-height: 70px;
+                    }
+
+                    p {
+                        max-width: unset;
+                    }
+                }
+            }
         }
     }
 
@@ -290,13 +405,10 @@
     .page7 {
         background: #1b0625;
         padding: 8vmin 8vmin;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         .main {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
 
             .left {
@@ -324,7 +436,8 @@
                     line-height: 110%;
                     letter-spacing: -0.1375rem;
                     text-transform: capitalize;
-                    max-width: 33.375rem;
+                    max-width: 70vmin;
+                    width: 100%;
                 }
 
                 p {
