@@ -302,13 +302,21 @@
     .bottom {
         padding-left: 25vmin ;
         p {
-            color: #FFF;
+            color: #ffffff66;
             font-family: DM Sans;
             font-size: 0.875rem;
             font-style: normal;
             font-weight: 400;
             line-height: 116.5%;
             padding: 1rem 0rem;
+            a{
+                color: #FFF;
+                transition: 400ms all;
+                font-weight: bolder;
+                &:hover{
+                    color: #00C1FF;
+                }
+            }
         }
     }
 }

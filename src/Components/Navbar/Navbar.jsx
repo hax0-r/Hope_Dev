@@ -41,7 +41,7 @@ export default function Navbar() {
                         <Link to="https://api.whatsapp.com/send/?phone=923201091220&text&type=phone_number&app_absent=0">
                             <div className="number-nav">
                                 <FaPhoneVolume />
-                                <p>+92 320 1091 220 </p>
+                               <Link to="https://api.whatsapp.com/send/?phone=923201091220&text&type=phone_number&app_absent=0"><p>+92 320 1091 220 </p></Link> 
                             </div>
                         </Link>
                         <button className="button">

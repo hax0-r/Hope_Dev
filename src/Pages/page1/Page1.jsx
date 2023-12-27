@@ -1,12 +1,9 @@
 import React, { useEffect, useRef } from 'react'
-import ProcessCard from '../../Components/ProcessCard/ProcessCard'
-import PROCESS_CARD_DATA from '../../Components/ProcessCard/PROCESS_CARD_DATA'
 import PageFourCard from '../../Components/PageFourCard/PageFourCards'
 import PAGE_FOUR_DATA from '../../Components/PageFourCard/PAGE_FOUR_DATA.JS'
-import page5Right from '../page1/asset1/page5Right.png'
 import PageSevenCard from '../../Components/PageSevenCard/PageSevenCard'
 import PAGE_SEVEN_DATA from '../../Components/PageSevenCard/PAGE_SEVEN_DATA'
-import homeImg from '../../Assets/home.jpg'
+import homeImg from '../../Assets/home.png'
 import Navbar from '../../Components/Navbar/Navbar'
 import { TiStarFullOutline } from "react-icons/ti";
 import gsap from "gsap";
@@ -20,8 +17,8 @@ export default function page1() {
         gsap.to(star.current, {
             rotate: "360",
             repeat: -1,
-            ease:"none",
-            duration:5
+            ease: "none",
+            duration: 5
         })
     }, [])
 
@@ -109,6 +106,8 @@ export default function page1() {
                         </div>
                     </div>
                 </div> */}
+                {/* <div className="page6">
+                </div> */}
                 <div className="page7">
                     <div className="main">
                         <div className="left">
@@ -134,8 +133,7 @@ export default function page1() {
                         </div>
                     </div>
                 </div>
-                <div className="page6">
-                </div>
+
 
             </div>
         </>

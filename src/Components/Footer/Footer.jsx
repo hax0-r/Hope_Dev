@@ -3,7 +3,7 @@ import NAVBAR_DATA from '../Navbar/NAVBAR_DATA'
 import { Link, NavLink } from 'react-router-dom'
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { FaYoutube } from "react-icons/fa6";
 import { SiGooglemybusiness } from "react-icons/si";
 
 
@@ -28,9 +28,9 @@ export default function Footer() {
                                 new heights.</h5>
                             <p>Simply fill this form and get into contact with us today!</p>
                             <div className="links-icon">
+                                <Link to="https://www.youtube.com/channel/UCFaQ3CeycqLReIhIs498u2Q" ><FaYoutube /></Link>
                                 <Link to="https://www.facebook.com/profile.php?id=61554111733727"> <FaFacebook /></Link>
                                 <Link to="https://www.linkedin.com/company/ez-brand-builders"> <FaLinkedin /></Link>
-                                <Link> <IoLogoWhatsapp /></Link>
                                 <Link> <SiGooglemybusiness /></Link>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ export default function Footer() {
                 </div>
                 <div className="hr"></div>
                 <div className="bottom">
-                    <Link to="/" ><p>Copyright © 2023 Software House, All rights reserved.</p></Link>
+                    <p>Copyright © 2023 <Link to="/">Software House</Link> , All rights reserved.</p>
                 </div>
             </div>
         </>
