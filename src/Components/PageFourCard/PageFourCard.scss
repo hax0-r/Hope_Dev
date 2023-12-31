@@ -13,10 +13,19 @@
     justify-content: center;
     align-items: center;
     gap: 3vmin;
-
+    transition: 200ms all;
+    cursor: pointer;
+    &:hover{
+        background-color: #31bbd00b;
+    }
     &:first-child {
         border-right: 0.03125rem solid #31BAD0;
         border-bottom: 0.03125rem solid #31BAD0;
+        background-color: #31BAD0;
+        transition: 200ms all;
+        &:hover{
+            background-color: #1bd1ed;
+        }
     }
 
     &:nth-child(2) {
@@ -54,7 +63,7 @@
     p {
         max-width: 21rem;
         width: 100%;
-        color: #FFF;
+        color: #ffffff;
         text-align: center;
         font-family: Plus Jakarta Sans;
         font-size: 1rem;

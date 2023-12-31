@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import NAVBAR_DATA from './NAVBAR_DATA'
 import { Link } from 'react-router-dom'
-import { FaPhoneVolume } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import logo from '../../Assets/logo.png'
@@ -40,7 +40,7 @@ export default function Navbar() {
                     <div className="btn-nav">
                         <Link to="https://api.whatsapp.com/send/?phone=923201091220&text&type=phone_number&app_absent=0">
                             <div className="number-nav">
-                                <FaPhoneVolume />
+                            <FaWhatsapp />
                                <Link to="https://api.whatsapp.com/send/?phone=923201091220&text&type=phone_number&app_absent=0"><p>+92 320 1091 220 </p></Link> 
                             </div>
                         </Link>

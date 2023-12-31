@@ -96,13 +96,15 @@ nav {
         }
 
         .btn-nav {
-            display:flex;
+            display: flex;
             align-items: center;
             gap: 3vmin;
+
             a {
                 text-decoration: none;
                 cursor: pointer;
                 padding: .5rem;
+                padding-left: unset;
 
                 .number-nav {
                     display: flex;
