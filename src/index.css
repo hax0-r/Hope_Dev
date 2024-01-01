@@ -8,16 +8,12 @@
     list-style: none;
     text-decoration: none;
     &::selection{
-        color: #1b0625;
+        color: #ffffff;
         background-color: #31bad0;
     }
 }
 
 *::-moz-selection {
-    background-color: var(--purple);
-    color: #fff;
-  }
-  *::selection {
     background-color: var(--purple);
     color: #fff;
   }

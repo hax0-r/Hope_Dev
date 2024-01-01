@@ -28,10 +28,17 @@ import page8_rightCircle from '../../Assets/page8_rightCircle.png'
 import page8_rightTriangle from '../../Assets/page8_rightTriangle.png'
 import page8_greenStair from '../../Assets/page8_greenStair.png'
 import page8_left from '../../Assets/page8_left.png'
+import page9_BRight_inside from '../../Assets/page9_BRight_inside.png'
+import page9_TLeft_inside from '../../Assets/page9_TLeft_inside.png'
+import page9_TRight_inside from '../../Assets/page9_TRight_inside.png'
+import page9_TLeft from '../../Assets/page9_TLeft.png'
 import page8_mid from '../../Assets/page8_mid.png'
+import page10_BLeft from '../../Assets/page10_BLeft.png'
+import page10_MBottom from '../../Assets/page10_MBottom.png'
 import homeImg from '../../Assets/home.png'
 import Navbar from '../../Components/Navbar/Navbar'
 import { TiStarFullOutline } from "react-icons/ti";
+import { FaCheckCircle } from "react-icons/fa";
 import gsap from "gsap";
 import PROCESS_CARD_DATA from '../../Components/ProcessCard/PROCESS_CARD_DATA'
 import ProcessCard from '../../Components/ProcessCard/ProcessCard'
@@ -59,7 +66,7 @@ export default function page1() {
         gsap.to(vectors2.current, {
             scale: 1.4,
             duration: 3,
-            delay:1,
+            delay: 1,
             repeat: -1,
             yoyo: true,
             ease: 'power1.inOut',
@@ -71,15 +78,16 @@ export default function page1() {
             rotate: 360,
             repeat: -1,
             ease: "none",
-            duration: 40
+            duration: 10
         })
     }, [])
+
     useEffect(() => {
         gsap.to(small_circle2.current, {
             rotate: -360,
             repeat: -1,
             ease: "none",
-            duration: 40
+            duration: 10
         })
     }, [])
 
@@ -246,6 +254,63 @@ export default function page1() {
                         </div>
                     </div>
                 </div>
+                <div className="page10">
+                    <img src={page10_BLeft} id='page10_BLeft' alt="" />
+                    <img src={page10_MBottom} id='page10_MBottom' alt="" />
+                    <div className="main">
+                        <div className="head">
+                            <div className="left">
+                                <h1>Plans & Pricing</h1>
+                                <p>Whether your time-saving automation needs are large or small, we’re here to help you scale.</p>
+                            </div>
+                            <div className="right">
+                                <button>MONTHLY</button>
+                                <button>YEARLY</button>
+                            </div>
+                        </div>
+                        <div className="content">
+                            <div className="CMain">
+                                <div className="first">
+                                    <h1>$19 <span> /month</span> </h1>
+                                    <h3>Starter</h3>
+                                    <p>Unleash the power of automation.</p>
+                                    <li> <FaCheckCircle /> Multi-step Zaps</li>
+                                    <li> <FaCheckCircle /> 3 Premium Apps</li>
+                                    <li> <FaCheckCircle /> 2 Users team</li>
+                                    <li>     .</li>
+                                    <li>     .</li>
+                                    <li>     .</li>
+                                    <button>Choose plan</button>
+                                </div>
+                                <div className="second">
+                                    <h1>$54 <span> /month</span> </h1>
+                                    <h3>Professional</h3>
+                                    <p>Advanced tools to take your work to the next level.</p>
+                                    <li> <FaCheckCircle /> Multi-step Zaps</li>
+                                    <li> <FaCheckCircle /> Unlimited Premium Apps</li>
+                                    <li> <FaCheckCircle /> 50 Users team</li>
+                                    <li> <FaCheckCircle /> Shared Workspace</li>
+                                    <li>     .</li>
+                                    <li>     .</li>
+                                    <button>Choose plan</button>
+                                </div>
+                                <div className="third">
+                                    <h5>MOST POPULAR</h5>
+                                    <h1>$89 <span> /month</span> </h1>
+                                    <h3>Company</h3>
+                                    <p>Automation plus enterprise-grade features.</p>
+                                    <li> <FaCheckCircle /> Multi-step Zaps</li>
+                                    <li> <FaCheckCircle /> Unlimited Premium</li>
+                                    <li> <FaCheckCircle /> Unlimited Users Team</li>
+                                    <li> <FaCheckCircle /> Advanced Admin</li>
+                                    <li> <FaCheckCircle /> Custom Data Retention</li>
+                                    <li>     .</li>
+                                    <button>Choose plan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="page8">
                     <img src={page8_left} id='page8_left' alt="" />
                     <img src={page8_mid} id='page8_mid' alt="" />
@@ -260,6 +325,24 @@ export default function page1() {
                             <input type="text" placeholder='First name' />
                             <input type="text" placeholder='Email address' />
                             <button>Subscribe Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="page9">
+                    <img src={page9_TLeft} id='page9_TLeft' alt="" />
+                    <div className="main">
+                        <h1>Let us know how we can help</h1>
+                        <div className="content">
+                            <img src={page9_BRight_inside} id='page9_BRight_inside' alt="" />
+                            <img src={page9_TLeft_inside} id='page9_TLeft_inside' alt="" />
+                            <img src={page9_TRight_inside} id='page9_TRight_inside' alt="" />
+                            <div className="CMain">
+                                <h1>Subscribe Newsletter</h1>
+                                <input type="text" placeholder='First Name' />
+                                <input type="text" placeholder='Last Name' />
+                                <input type="text" />
+                                <button>Subscribe</button>
+                            </div>
                         </div>
                     </div>
                 </div>

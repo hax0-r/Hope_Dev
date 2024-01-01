@@ -183,23 +183,27 @@
         align-items: center;
         padding: 14vmin 0;
         position: relative;
-        #page2_BLeft{
+
+        #page2_BLeft {
             position: absolute;
             bottom: -15vmin;
             left: 0;
         }
-        #vector{
+
+        #vector {
             position: absolute;
             bottom: 25%;
             right: 10%;
         }
-        .circles{
+
+        .circles {
             position: relative;
             display: inline-block;
             position: absolute;
             bottom: 10%;
             left: 5%;
-            #small_circle{
+
+            #small_circle {
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -797,6 +801,490 @@
 
                     button {
                         width: 16.875rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .page9 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8vmin 5vmin 15vmin 5vmin;
+        position: relative;
+
+        #page9_TLeft {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .main {
+            text-align: center;
+            max-width: 65.0625rem;
+            width: 100%;
+
+            h1 {
+                padding-bottom: 12vmin;
+                color: #FFF;
+                font-family: DM Sans;
+                font-size: 3.4375rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 125.5%;
+                text-transform: capitalize;
+            }
+
+            .content {
+
+                max-width: 65.0625rem;
+                min-height: 29.75rem;
+                width: 100%;
+                background-color: #2a1733;
+                padding: 2rem;
+                border-radius: 0.875rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                #page9_BRight_inside {
+                    position: absolute;
+                    bottom: 12vmin;
+                    right: 10vmin;
+                }
+
+                #page9_TLeft_inside {
+                    position: absolute;
+                    top: 2vmin;
+                    left: 2vmin;
+                }
+
+                #page9_TRight_inside {
+                    position: absolute;
+                    top: 5vmin;
+                    right: 15vmin;
+                }
+
+                .CMain {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    h1 {
+                        color: #00C1FF;
+                        font-family: DM Sans;
+                        font-size: 3rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: .25rem;
+                        padding: 0;
+                        padding-bottom: 3vmin;
+                    }
+
+                    input {
+                        max-width: 30rem;
+                        width: 100%;
+                        padding: 1.5rem 0 .5rem 0;
+                        color: rgba(255, 255, 255, 0.31);
+                        font-family: DM Sans;
+                        font-size: 1.1875rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 110.5%;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 2px solid #FFFFFFB8;
+                    }
+
+                    button {
+                        margin-top: 2rem;
+                        border: none;
+                        width: 8.9375rem;
+                        color: #FFF;
+                        font-family: DM Sans;
+                        font-size: 1rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 110.5%;
+                        padding: .8rem 0;
+                        border-radius: 2.03125rem;
+                        background: #00C1FF;
+                        flex-shrink: 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .page10 {
+        background: url(../../Assets/page10_bg.png) center;
+        background-size: cover;
+        height: 73.9375rem;
+        position: relative;
+        #page10_BLeft{
+            position: absolute;
+            bottom: 5rem;
+            left: 0;
+        }
+        #page10_MBottom{
+            position: absolute;
+            bottom: -20rem;
+            right: 20vmin;
+        }
+        .main {
+            padding-top: 15vmin;
+            .head {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-bottom: 15vmin;
+
+                .left {
+                    h1 {
+                        color: #FFF;
+                        font-family: DM Sans;
+                        font-size: 3rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: .25rem;
+                        padding-bottom: 4vmin;
+                    }
+
+                    p {
+                        color: #FFF;
+                        font-family: DM Sans;
+                        font-size: 1.125rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        max-width: 36.5rem;
+                        width: 100%;
+                    }
+                }
+
+                .right {
+                    background-color: #7f7f7f;
+                    display: inline-block;
+                    border-radius: 1.375rem;
+
+                    button {
+                        border-radius: 1.375rem;
+                        border: 0px solid #FFF;
+                        background: #BB6BD9;
+                        box-shadow: 0px 5px 7px 0px rgba(82, 67, 194, 0.23);
+                        padding: 0.8125rem 1.5rem;
+                        align-items: flex-start;
+                        gap: 0.625rem;
+                        color: var(--White, #FFF);
+                        text-align: center;
+                        font-family: Poppins;
+                        font-size: 0.75rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 0.05206rem;
+
+                        &:nth-child(2) {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+
+            .content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .CMain {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 62rem;
+                    width: 100%;
+                    min-height: 32rem;
+                    flex-shrink: 0;
+                    border-radius: 1.625rem;
+                    border: 0px solid #FFF;
+                    background: rgba(37, 36, 36, 0.58);
+                    backdrop-filter: blur(26.5px);
+                    gap: 4rem;
+
+                    .first {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+
+                        h1 {
+                            color: #00C1FF;
+                            font-family: DM Sans;
+                            font-size: 2.25rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 2.875rem;
+
+                            span {
+                                color: #FFF;
+                                font-family: Poppins;
+                                font-size: 1.0625rem;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+                        }
+
+                        h3 {
+                            color: #00C1FF;
+                            font-family: Poppins;
+                            font-size: 1.75rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        p {
+                            color: #FFF;
+                            font-family: Poppins;
+                            font-size: 0.9375rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            max-width: 14.5rem;
+                            width: 100%;
+                            padding-bottom: 1rem;
+
+                        }
+
+                        li {
+                            list-style: none;
+                            color: #FFF;
+                            font-family: Poppins;
+                            font-size: 0.9375rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            &:nth-child(7){
+                                color: transparent;
+                            }
+                            &:nth-child(8){
+                                color: transparent;
+                            }
+                            &:nth-child(9){
+                                color: transparent;
+                            }
+
+                            svg {
+                                color: #00C1FF;
+                                background-color: #ffffff;
+                                border-radius: 50%;
+                                border: 2px solid #00C1FF;
+                            }
+                        }
+
+                        button {
+                            color: #FFFFFF;
+                            border: none;
+                            text-align: center;
+                            font-family: Poppins;
+                            font-size: 0.9375rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            border-radius: 1.5rem;
+                            background: #116f94;
+                            width: 12.9375rem;
+                            height: 2.8125rem;
+                            flex-shrink: 0;
+                        }
+                    }
+
+                    .second {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+
+                        h1 {
+                            color: #00C1FF;
+                            font-family: DM Sans;
+                            font-size: 2.25rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 2.875rem;
+
+                            span {
+                                color: #FFF;
+                                font-family: Poppins;
+                                font-size: 1.0625rem;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+                        }
+
+                        h3 {
+                            color: #00C1FF;
+                            font-family: Poppins;
+                            font-size: 1.75rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        p {
+                            color: #FFF;
+                            font-family: Poppins;
+                            font-size: 0.9375rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            max-width: 14.5rem;
+                            width: 100%;
+                            padding-bottom: 1rem;
+
+                        }
+
+                        li {
+                            list-style: none;
+                            color: #FFF;
+                            font-family: Poppins;
+                            font-size: 0.9375rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            &:nth-child(8){
+                                color: transparent;
+                            }
+                            &:nth-child(9){
+                                color: transparent;
+                            }
+
+                            svg {
+                                color: #00C1FF;
+                                background-color: #ffffff;
+                                border-radius: 50%;
+                                border: 2px solid #00C1FF;
+                            }
+                        }
+
+                        button {
+                            color: #FFF;
+                            border: none;
+                            text-align: center;
+                            font-family: Poppins;
+                            font-size: 0.9375rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            border-radius: 1.5rem;
+                            background: #116f94;
+                            width: 12.9375rem;
+                            height: 2.8125rem;
+                            flex-shrink: 0;
+                        }
+                    }
+
+                    .third {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+
+                        h5 {
+                            color: #FFF;
+                            border-radius: 0.84375rem;
+                            background: #A035E2;
+                            font-family: Poppins;
+                            font-size: 0.625rem;
+                            font-style: normal;
+                            font-weight: 800;
+                            line-height: normal;
+                            letter-spacing: 0.05206rem;
+                            position: absolute;
+                            top: 2rem;
+                            right: 1rem;
+                            padding: .4rem 1.5rem;
+                        }
+
+                        h1 {
+                            color: #00C1FF;
+                            font-family: DM Sans;
+                            font-size: 2.25rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 2.875rem;
+
+                            span {
+                                color: #FFF;
+                                font-family: Poppins;
+                                font-size: 1.0625rem;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+                        }
+
+                        h3 {
+                            color: #00C1FF;
+                            font-family: Poppins;
+                            font-size: 1.75rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        p {
+                            color: #FFF;
+                            font-family: Poppins;
+                            font-size: 0.9375rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            max-width: 14.5rem;
+                            width: 100%;
+                            padding-bottom: 1rem;
+
+                        }
+
+                        li {
+                            list-style: none;
+                            color: #FFF;
+                            font-family: Poppins;
+                            font-size: 0.9375rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            &:nth-child(10){
+                                color: transparent;
+                            }
+
+                            svg {
+                                color: #00C1FF;
+                                background-color: #ffffff;
+                                border-radius: 50%;
+                                border: 2px solid #00C1FF;
+                            }
+                        }
+
+                        button {
+                            color: #FFF;
+                            border: none;
+                            text-align: center;
+                            font-family: Poppins;
+                            font-size: 0.9375rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            border-radius: 1.5rem;
+                            background: #116f94;
+                            width: 12.9375rem;
+                            height: 2.8125rem;
+                            flex-shrink: 0;
+                        }
                     }
                 }
             }
