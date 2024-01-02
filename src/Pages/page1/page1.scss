@@ -190,10 +190,17 @@
             left: 0;
         }
 
+
         #vector {
             position: absolute;
             bottom: 25%;
             right: 10%;
+        }
+
+        @include media(1400px) {
+            #vector {
+                bottom: 10%;
+            }
         }
 
         .circles {
@@ -209,6 +216,12 @@
                 left: 50%;
                 padding-bottom: 4px;
                 transform: translate(-50%, -50%);
+            }
+        }
+
+        @include media(1400px) {
+            .circles {
+                bottom: 5%;
             }
         }
 
