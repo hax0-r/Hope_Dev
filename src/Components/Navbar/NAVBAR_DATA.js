@@ -14,6 +14,10 @@ const NAVBAR_DATA = [
     {
         navTitle : "Blog",
         navPath : "/blog"
-    }
+    },
+    {
+        navTitle : "SignUp",
+        navPath : "/SignUp"
+    },
 ]
  export default NAVBAR_DATA;

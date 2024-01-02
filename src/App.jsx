@@ -1,5 +1,6 @@
 import './Components/PageFourCard/PageFourCard.scss'
 import './Components/ProcessCard/ProcessCard.scss'
+import './Pages/SignUp/SignUp.scss'
 import './Pages/Blog/Blog.scss'
 import './Pages/page1/Page1.scss'
 import './Components/ServicesCard/ServicesCard.css'

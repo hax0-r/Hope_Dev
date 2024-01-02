@@ -924,20 +924,25 @@
     .page10 {
         background: url(../../Assets/page10_bg.png) center;
         background-size: cover;
-        height: 73.9375rem;
+        min-height: 73.9375rem;
         position: relative;
-        #page10_BLeft{
+        padding: 0 2rem;
+
+        #page10_BLeft {
             position: absolute;
             bottom: 5rem;
             left: 0;
         }
-        #page10_MBottom{
+
+        #page10_MBottom {
             position: absolute;
             bottom: -20rem;
             right: 20vmin;
         }
+
         .main {
             padding-top: 15vmin;
+
             .head {
                 display: flex;
                 justify-content: space-around;
@@ -965,13 +970,15 @@
                         line-height: normal;
                         max-width: 36.5rem;
                         width: 100%;
+                        margin-bottom: 2rem;
                     }
                 }
 
                 .right {
                     background-color: #7f7f7f;
-                    display: inline-block;
+                    display: flex;
                     border-radius: 1.375rem;
+                    margin-right: 5vmin;
 
                     button {
                         border-radius: 1.375rem;
@@ -995,6 +1002,19 @@
                         }
                     }
                 }
+
+                @include media(750px) {
+                    .right {
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            @include media(720px) {
+                .head {
+                    flex-direction: column;
+                    align-items: end;
+                }
             }
 
             .content {
@@ -1015,11 +1035,13 @@
                     background: rgba(37, 36, 36, 0.58);
                     backdrop-filter: blur(26.5px);
                     gap: 4rem;
+                    padding: 3rem;
 
                     .first {
                         display: flex;
                         flex-direction: column;
                         gap: .5rem;
+
 
                         h1 {
                             color: #00C1FF;
@@ -1069,13 +1091,16 @@
                             font-style: normal;
                             font-weight: 500;
                             line-height: normal;
-                            &:nth-child(7){
+
+                            &:nth-child(7) {
                                 color: transparent;
                             }
-                            &:nth-child(8){
+
+                            &:nth-child(8) {
                                 color: transparent;
                             }
-                            &:nth-child(9){
+
+                            &:nth-child(9) {
                                 color: transparent;
                             }
 
@@ -1101,6 +1126,22 @@
                             width: 12.9375rem;
                             height: 2.8125rem;
                             flex-shrink: 0;
+                        }
+                    }
+
+                    @include media(696px) {
+                        .first {
+                            li {
+
+                                &:nth-child(7) {
+                                    display: none;
+                                }
+
+                                &:nth-child(8) {
+                                    display: none;
+                                }
+
+                            }
                         }
                     }
 
@@ -1157,10 +1198,12 @@
                             font-style: normal;
                             font-weight: 500;
                             line-height: normal;
-                            &:nth-child(8){
+
+                            &:nth-child(8) {
                                 color: transparent;
                             }
-                            &:nth-child(9){
+
+                            &:nth-child(9) {
                                 color: transparent;
                             }
 
@@ -1189,10 +1232,25 @@
                         }
                     }
 
+                    @include media(696px) {
+                        .second {
+                            li {
+                                &:nth-child(8) {
+                                    display: none;
+                                }
+
+                            }
+                        }
+                    }
+
                     .third {
                         display: flex;
                         flex-direction: column;
                         gap: .5rem;
+                        background-color: #00c1ff;
+                        padding: 3.5rem 2rem 1.5rem 2rem;
+                        margin-top: -5rem;
+                        border-radius: 1.625rem;
 
                         h5 {
                             color: #FFF;
@@ -1211,7 +1269,7 @@
                         }
 
                         h1 {
-                            color: #00C1FF;
+                            color: #ffffff;
                             font-family: DM Sans;
                             font-size: 2.25rem;
                             font-style: normal;
@@ -1258,7 +1316,8 @@
                             font-style: normal;
                             font-weight: 500;
                             line-height: normal;
-                            &:nth-child(10){
+
+                            &:nth-child(10) {
                                 color: transparent;
                             }
 
@@ -1280,10 +1339,27 @@
                             font-weight: 500;
                             line-height: normal;
                             border-radius: 1.5rem;
-                            background: #116f94;
+                            background: #bb6bd9;
                             width: 12.9375rem;
                             height: 2.8125rem;
                             flex-shrink: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        @include media(1040px) {
+            .main {
+                .content {
+
+                    .CMain {
+                        flex-wrap: wrap;
+
+
+                        .second {
+                            padding: 10vmin 0;
                         }
                     }
                 }
